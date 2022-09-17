@@ -17,10 +17,18 @@ html, body {
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 14px;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  text-decoration: none;
 }
 
+h1{
+  text-align: right;
+  font-size: x-large;
+  text-decoration: underline;
+}
 /* principe de changement de fond par Gradient*/
 
 .textemulticolore {
