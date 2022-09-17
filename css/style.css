@@ -49,12 +49,10 @@ header {
     border-bottom: 2px solid #ffffff;
     height: 120px;
     display: flex;
-    background-image:url(./image/banniere.png);
+    background-image:url(./image/Logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    /* position: fixed; */
     width: 100%;
-    top: 0;
     margin-left:auto;
     margin-right:auto;
 }
