@@ -1,10 +1,14 @@
 /*Style général applicable sur toute la page*/
 * {
-    color:rgb(0, 0, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-align: justify;
+  box-sizing: border-box;
 }
 
-html, body{
+html, body {
   background-color: black;
   padding: 0px;
   margin: 0px;
@@ -13,23 +17,23 @@ html, body{
 }
 
 p {
-    font-size: 1em;
-    line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 /* principe de changement de fond par Gradient*/
 
 .textemulticolore {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 
 /*en tête & pied de page*/
-.menu{
+.menu {
   width: 100%;
   height: 66px;
   background-color: #beab3a;
@@ -37,23 +41,27 @@ p {
   border-radius: 30px/30px;
 }
 
-.logo{
+.logo {
   margin: 0;
   padding: 0;
   color: white;
   font-weight: 900;
 }
-.m_left{
+
+.m_left {
   float: left;
 }
-.m_right{
+
+.m_right {
   float: right;
 }
-.espace{
+
+.espace {
   width: 80%;
   margin: auto;
 }
-.m_link{
+
+.m_link {
   text-decoration: none;
   color: white;
   font-weight: 900;
@@ -63,92 +71,103 @@ p {
   transition: all 0.3s ease-in-out;
   border-bottom: 3px solid transparent;
 }
-.m_link:hover{
+
+.m_link:hover {
   border-bottom: 3px solid blue;
   padding-bottom: 3px;
 }
-.m_nav_changement{
+
+.m_nav_changement {
   position: relative;
   width: 40px;
   height: 70px;
 }
 
 footer {
-    border-top: 2px solid #ffffff;
-    text-align: justify;
-    box-sizing: border-box;
+  text-align: justify;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 0px;
+  background: #4f4f4f;
+  box-shadow: 0px 0px 15px #333333;
+  border-top: 2px solid #ffffff;
 }
 
 footer p {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
+
 /*Section*/
 
 section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 20px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbbbbb;
-    background-color: #ffffff;
-    border-radius: 60px/60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  margin: auto auto;
+  box-shadow: 0px 0px 10px #bbbbbb;
+  background-color: #ffffff;
+  border-radius: 60px/60px;
 }
 
-section{
-    margin: 20px 0;
-    width: 90%;
+section {
+  margin: 20px 0;
+  width: 100%;
 }
 
 section>div {
-    width: 90%;
+  width: 100%;
 }
 
 
 /*Section information*/
 .description {
-    border-bottom: 2px dashed #cccccc;
+  border-bottom: 2px dashed #cccccc;
 }
 
 .description a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    margin: 10px auto 30px auto;
-    color: #ffffff;
-    background-color: #eeaa00;
-    box-shadow: 0px 0px 10px #cccccc;
-    border-radius: 5px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto 30px auto;
+  color: #ffffff;
+  background-color: #eeaa00;
+  box-shadow: 0px 0px 10px #cccccc;
+  border-radius: 5px;
 }
+
 /*VERSION BUREAU DU Site (code réajustable en fonction du besoin) BETA !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @media only screen and (max-width: 800px) {
-    section {
-        width: 80%;
-        box-shadow: 0px 0px 10px #bbbbbb;
-    }
+  section {
+    width: 80%;
+    box-shadow: 0px 0px 10px #bbbbbb;
+  }
 
-    /* refactoriser l'écran */
-    .m_right{
-      display: none;
-    }
-    /* refactoriser le texte */
-    .description {
-        border-bottom: none;
-        border-right: 2px solid #cccccc;
-        padding-right: 20px;
-        margin-left: auto;
-        flex: 0 0 45%;
-    }
-    .description a {
-        border: 2px solid transparent;
-    }
-    .description a:hover {
-        color: #f28835;
-        background-color: #ffffff;
-        border: 2px solid #f28835;
-        box-shadow: 0px 0px 20px #666666;
-    }
+  /* refactoriser l'écran */
+  .m_right {
+    display: none;
+  }
+
+  /* refactoriser le texte */
+  .description {
+    border-bottom: none;
+    border-right: 2px solid #cccccc;
+    padding-right: 20px;
+    margin-left: auto;
+    flex: 0 0 45%;
+  }
+
+  .description a {
+    border: 2px solid transparent;
+  }
+
+  .description a:hover {
+    color: #f28835;
+    background-color: #ffffff;
+    border: 2px solid #f28835;
+    box-shadow: 0px 0px 20px #666666;
+  }
 }
