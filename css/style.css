@@ -15,7 +15,7 @@ html, body {
 
 }
 
-/* p {
+p {
   font-size: 14px;
   word-wrap: break-word;
   font-family: 'Courier New', Courier, monospace;
@@ -27,7 +27,7 @@ h1 {
   text-align: right;
   font-size: x-large;
   text-decoration: underline;
-} */
+}
 
 /* principe de changement de fond par Gradient*/
 
@@ -41,58 +41,84 @@ h1 {
 
 
 /*en tête & pied de page*/
-header {
+nav {
   width: 100%;
-  height: 66px;
-  background-color: #333333;
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(182, 25, 25);
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
   position: relative;
 }
 
-header>a,
-header button {
-  color: white;
-  margin: 0 15px;
-  font-size: 1.3em;
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-header button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
 }
 
-header .dérouler .contenu {
+nav a:hover {
+  color: orange;
+  border-bottom: 2px solid gold;
+}
+
+.sous {
   display: none;
-
-}
-
-header .dérouler:hover .contenu {
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0px 1px 2px #CCC;
+  background-color: rgb(182, 25, 25);
   position: absolute;
-  background-color: #a02727;
-  top: 70px;
-  width: 120%;
-  padding: 12px 15px;
-  box-sizing: border-box;
-  color: black;
-  font-size: large;
+  width: 100%;
+  z-index: 1000;
 }
 
-header .contenu a{
-  color: black;
-}
-header .dérouler {
-  position: relative;
-  display: flex;
-  height: 100%;
+nav>ul li:hover .sous {
+  display: block;
 }
 
-/* footer {
+.sous li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+.sous a {
+  padding: 10px;
+  border-bottom: none;
+}
+
+.sous a:hover {
+  border-bottom: none;
+  background-color: rgb(182, 25, 25);
+}
+
+.deroulant>a::after {
+  content: "=>";
+  font-size: 12px;
+}
+
+.conteneur {
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+footer {
   text-align: justify;
   box-sizing: border-box;
   width: 100%;
@@ -106,11 +132,11 @@ footer p {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-} */
+}
 
 /*Section*/
 
-/* section {
+section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -134,7 +160,7 @@ section>div {
   height: 500px;
   box-sizing: border-box;
   margin: auto auto;
-} */
+}
 
 
 /*VERSION BUREAU DU Site (code réajustable en fonction du besoin) BETA !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
