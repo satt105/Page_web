@@ -23,7 +23,7 @@ html, body {
 
 body {
   background-image: url(image/fond_back.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 /* principe de changement de fond par Gradient*/
