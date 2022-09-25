@@ -1,20 +1,24 @@
 @charset "UTF-8";
 
+/* police custom */
+@font-face {
+  font-family: 'caesar';
+  src: url(font/CAESAR.ttf) format(‘truetype’)
+}
+
 /*Style général applicable sur toute la page*/
 * {
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: caesar, Arial, Helvetica;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
+  color: white;
 }
 
 html, body {
   background-color: black;
   padding: 0px;
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-
 }
 
 body {
@@ -129,7 +133,7 @@ footer {
   padding: 20px 0px;
   background: #4f4f4f;
   box-shadow: 0px 0px 15px #333333;
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid #771717;
 }
 
 footer p {
@@ -151,7 +155,7 @@ section {
   margin: auto auto;
   margin-top: 10px;
   box-shadow: 0px 0px 20px #1d0404;
-  background-color: #882929;
+  background-color: #4d0808;
   border-radius: 20px/20px;
 }
 
@@ -170,32 +174,47 @@ section>div {
 
 p {
   box-sizing: border-box;
-  background-color: white;
   padding: 5px 5px 5px 5px;
   border-radius: 10px/10px;
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: caesar, Arial, Helvetica;
   text-decoration: none;
   letter-spacing: 1px;
   font-style: normal;
   text-align: justify;
+  color: white;
+}
+
+.p_intro {
+  background-color: rgb(97, 24, 24);
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 36px;
   margin-bottom: 8px;
+  margin-top: 12px;
   text-decoration: underline;
+  font-weight: bold;
+  color: white;
 }
 
 /* formatage des image et photo */
 .photo_text_format {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 50px #501717;
 }
 
 .text_format {
   margin-left: 10px;
   overflow: hidden;
+}
+
+.video_intro {
+  margin-top: 1%;
+  background-color: #1d0404;
+  box-shadow: 0px 0px 50px #501717;
 }
 
 .videoformat {
@@ -213,7 +232,7 @@ iframe {
 }
 
 image {
-  border: 3px solid #f14848;
+  border: 3px solid #1d0404;
   box-sizing: border-box;
 }
 
