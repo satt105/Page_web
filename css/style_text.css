@@ -19,9 +19,11 @@ section {
   padding-right: 5px;
   margin: auto auto;
   margin-top: 10px;
-  box-shadow: 0px 0px 20px #1d0404;
-  background-color: #4d0808;
+  margin-bottom: 10px;
+  background-color: #1d0404;
+  box-shadow: 0px 0px 50px #501717;
   border-radius: 20px/20px;
+  animation: pulse 3.0s infinite;
 }
 
 section h2 {
@@ -29,6 +31,14 @@ section h2 {
   width: 90%;
 }
 
+/* animation magique des sections */
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 5px #3a0505;
+  }
+}
+
+/* fin des animations */
 h2 {
   text-decoration: underline;
 }
