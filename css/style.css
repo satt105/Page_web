@@ -164,6 +164,19 @@ iframe {
   box-shadow: 0px 20px 50px #771616;
 }
 
+.imagebanniere {
+  box-sizing: border-box;
+  box-shadow: 0px 20px 50px #771616;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /*VERSION BUREAU DU Site (code réajustable en fonction du besoin) BETA !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @media only screen and (max-width: 800px) {
   section {
