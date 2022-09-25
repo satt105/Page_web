@@ -1,0 +1,12 @@
+/* codé par Thomas Bouret alias satt105 */
+@charset "UTF-8";
+/* ici sont les feuille de style auto adaptable */
+
+
+/*VERSION BUREAU adaptable (code réajustable en fonction du besoin) BETA !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
+  nav .menu_disposition {
+    padding: 5px 0px;
+    font-size: medium;
+  }
+}
