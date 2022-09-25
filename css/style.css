@@ -68,7 +68,7 @@ nav ul::after {
   clear: both;
 }
 
-nav a {
+nav .menu_disposition {
   display: block;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -79,7 +79,7 @@ nav a {
   opacity: 0.8;
 }
 
-nav a:hover {
+nav .menu_disposition:hover {
   color: orange;
   border-bottom: 2px solid gold;
 }
@@ -103,17 +103,17 @@ nav>ul li:hover .sous-menu {
   text-align: left;
 }
 
-.sous-menu a {
+.sous-menu .menu_disposition {
   padding: 10px;
   border-bottom: none;
 }
 
-.sous-menu a:hover {
+.sous-menu .menu_disposition:hover {
   border-bottom: none;
   background-color: rgb(182, 25, 25);
 }
 
-.deroulant>a::after {
+.deroulant>.menu_disposition::after {
   content: "";
   font-size: 12px;
 }
