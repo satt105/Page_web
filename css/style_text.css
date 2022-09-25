@@ -1,0 +1,84 @@
+/* codé par Thomas Bouret alias satt105 */
+@charset "UTF-8";
+
+/* police custom */
+@font-face {
+  font-family: 'caesar';
+  src: url(font/CAESAR.ttf) format(‘truetype’)
+}
+
+/*Section*/
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 1000px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto auto;
+  margin-top: 10px;
+  box-shadow: 0px 0px 20px #1d0404;
+  background-color: #4d0808;
+  border-radius: 20px/20px;
+}
+
+section h2 {
+  margin: 20px 0;
+  width: 90%;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+section>div {
+  width: 90%;
+}
+
+p {
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px/10px;
+  font-size: 18px;
+  font-family: caesar, Arial, Helvetica;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-style: normal;
+  text-align: justify;
+  color: white;
+}
+
+.p_intro {
+  background-color: rgb(97, 24, 24);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.text {
+  display: flex;
+}
+.text_gras{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* principe de changement de fond par Gradient*/
+
+.textemulticolore {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* codé par Thomas Bouret alias satt105 */
