@@ -22,20 +22,6 @@ body {
   background-repeat: no-repeat;
 }
 
-p {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
-
-h1 {
-  font-size: 26px;
-  margin-bottom: 8px;
-  text-decoration: underline;
-}
-
 /* principe de changement de fond par Gradient*/
 
 /* .textemulticolore {
@@ -164,8 +150,8 @@ section {
   padding-right: 10px;
   margin: auto auto;
   margin-top: 10px;
-  box-shadow: 0px 0px 10px #522d2d;
-  background-color: #792f2f;
+  box-shadow: 0px 0px 20px #1d0404;
+  background-color: #882929;
   border-radius: 20px/20px;
 }
 
@@ -182,6 +168,27 @@ section>div {
   width: 90%;
 }
 
+p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+/* formatage des image et photo */
+.photo_text_format {
+  display: flex;
+  align-items: center;
+}
+.text_format{
+  
+}
 .videoformat {
   display: flex;
   justify-content: center;
@@ -190,9 +197,15 @@ section>div {
   align-content: center;
   margin-top: 1%;
 }
+
 iframe {
   box-sizing: border-box;
   box-shadow: 0px 0px 50px #501717;
+}
+
+image {
+  border: 3px solid #f14848;
+  box-sizing: border-box;
 }
 
 /*VERSION BUREAU DU Site (code réajustable en fonction du besoin) BETA !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
