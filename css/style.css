@@ -171,8 +171,8 @@ footer p {
   flex-wrap: wrap;
   align-content: center;
   margin-top: 1%;
-  width: 720px;
-  height: 500px;
+  /* width: 720px;
+  height: 500px; */
 }
 
 iframe {
