@@ -54,7 +54,7 @@ nav ul::after {
 }
 
 nav .menu_disposition {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: rgb(255, 255, 255);
   border-bottom: 2px solid transparent;

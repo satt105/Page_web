@@ -3,20 +3,12 @@
 /* ici sont les feuille de style auto adaptable */
 
 
-/*VERSION BUREAU adaptable (code réajustable en fonction du besoin) BETA !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*VERSION BUREAU adaptable (code réajustable en fonction du besoin)*/
 @media only screen and (max-width: 1328px) {
 
   /* réadaptation de l'espacement du menu */
   nav .menu_disposition {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid transparent;
-    padding: 5px 0px;
-    text-align: center;
     font-size: large;
-    opacity: 0.8;
-    cursor: pointer;
   }
 
   nav ul li {
@@ -29,4 +21,16 @@
   }
 }
 
-/* penser a codé la réadaptation a partir de 1100px en large */
+@media only screen and (max-width: 1024px) {
+
+  /* réadaptation de l'espacement du menu */
+  nav .menu_disposition {
+    font-size: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  nav ul li {
+    width: 8%;
+  }
+}
