@@ -24,7 +24,7 @@ body {
 
 /*en tête & pied de page*/
 header {
-  bottom: 60px;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -86,7 +86,7 @@ nav>ul li:hover .sous-menu {
 .sous-menu li {
   float: none;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .sous-menu .menu_disposition {
