@@ -18,11 +18,12 @@ section {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #1d0404;
   box-shadow: 0px 0px 50px #501717;
   border-radius: 20px/20px;
+  background: linear-gradient(0deg, rgb(59, 7, 7), rgb(77, 6, 6));
   animation: pulse 3.0s infinite;
 }
 
@@ -33,8 +34,31 @@ section h2 {
 
 /* animation magique des sections */
 @keyframes pulse {
-  to {
-    box-shadow: 0 0 0 5px #3a0505;
+  0% {
+    box-shadow: 0 0 0 5px linear-gradient(0deg, rgb(59, 7, 7), rgb(88, 6, 6));
+    ;
+  }
+
+  100% {
+    box-shadow: 0 0 0 5px linear-gradient(0deg, rgb(78, 6, 6), rgb(100, 2, 2));
+    ;
+  }
+}
+
+/* commande pour faire clignoter du texte */
+/* animation: clignotant 4s linear infinite;
+-moz-animation: clignotant 4s linear infinite; */
+@keyframes clignotant {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
@@ -66,7 +90,7 @@ p {
 
 h1 {
   font-size: 36px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   margin-top: 12px;
   text-decoration: underline;
   font-weight: bold;

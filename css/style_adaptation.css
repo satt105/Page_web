@@ -4,9 +4,29 @@
 
 
 /*VERSION BUREAU adaptable (code réajustable en fonction du besoin) BETA !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 1328px) {
+
+  /* réadaptation de l'espacement du menu */
   nav .menu_disposition {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
     padding: 5px 0px;
-    font-size: medium;
+    text-align: center;
+    font-size: large;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  nav ul li {
+    width: 10%;
+  }
+
+  .logo {
+    height: 30px;
+    max-width: 100%;
   }
 }
+
+/* penser a codé la réadaptation a partir de 1100px en large */
