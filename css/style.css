@@ -63,6 +63,7 @@ nav .menu_disposition {
   font-size: x-large;
   opacity: 1;
   cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 nav .menu_disposition:hover {

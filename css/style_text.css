@@ -7,6 +7,10 @@
   src: url(font/CAESAR.ttf) format(‘truetype’)
 }
 
+* {
+  font-family: caesar, Arial, Helvetica, sans-serif;
+}
+
 /*Section*/
 
 section {
