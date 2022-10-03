@@ -76,6 +76,7 @@ section>div {
 }
 
 p {
+  display: block;
   box-sizing: border-box;
   padding: 5px 5px 5px 5px;
   border-radius: 10px/10px;
@@ -84,7 +85,7 @@ p {
   text-decoration: none;
   letter-spacing: 1px;
   font-style: normal;
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
@@ -103,13 +104,15 @@ h1 {
   text-align: center;
 }
 
-.text {
-  display: flex;
-}
-
 .text_gras {
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.formatage_list {
+  text-align: left;
+  float: left;
+  direction: ltr;
 }
 
 /* principe de changement de fond par Gradient*/
