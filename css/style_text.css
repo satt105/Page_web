@@ -4,11 +4,19 @@
 /* police custom */
 @font-face {
   font-family: 'caesar';
-  src: url(font/CAESAR.ttf) format(‘truetype’)
+  src: url(font/CAESAR.ttf) format("truetype")
 }
 
+/*Style général applicable sur toute la page*/
 * {
-  font-family: caesar, Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: white;
+  font-family: caesar,
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
 /*Section*/
@@ -28,7 +36,9 @@ section {
   box-shadow: 0px 0px 50px #501717;
   border-radius: 20px/20px;
   background: linear-gradient(0deg, rgb(59, 7, 7), rgb(77, 6, 6));
-  animation: pulse 3.0s infinite;
+  animation: apparition 4s linear;
+  -moz-animation: apparition 4s linear;
+  -webkit-animation: apparition 4s linear;
 }
 
 section h2 {
@@ -36,19 +46,86 @@ section h2 {
   width: 90%;
 }
 
-/* animation magique des sections */
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 5px linear-gradient(0deg, rgb(59, 7, 7), rgb(88, 6, 6));
-    ;
-  }
-
-  100% {
-    box-shadow: 0 0 0 5px linear-gradient(0deg, rgb(78, 6, 6), rgb(100, 2, 2));
-    ;
-  }
+section>div {
+  width: 90%;
 }
 
+/* fin des sections */
+
+h2 {
+  text-decoration: underline;
+  animation: apparition 4s linear;
+  -moz-animation: apparition 4s linear;
+  -webkit-animation: apparition 4s linear;
+}
+
+p {
+  display: block;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px/10px;
+  font-size: 18px;
+  font-family: "caesar", Arial, Helvetica;
+  text-decoration: none;
+  font-style: normal;
+  text-align: center;
+  justify-content: center;
+  animation: apparition 4s linear;
+  -moz-animation: apparition 4s linear;
+  -webkit-animation: apparition 4s linear;
+  text-rendering: geometricPrecision;
+  text-shadow: 1px white;
+  letter-spacing: 0px;
+}
+
+/* va faloir optimiser */
+.text_format {
+  border-left: 0 solid #00ff99;
+  transition-duration: 1s;
+}
+
+.text_format:hover {
+  border-left: 5px solid #00ff99;
+}
+
+/* va faloir fini l'optimisation */
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  animation: apparition 4s linear;
+  -moz-animation: apparition 4s linear;
+  -webkit-animation: apparition 4s linear;
+}
+
+ol {
+  font-size: large;
+  animation: apparition 4s linear;
+  -moz-animation: apparition 4s linear;
+  -webkit-animation: apparition 4s linear;
+}
+
+/* formatage des div */
+.formatage_centre {
+  display: flex;
+  justify-content: center;
+}
+
+/* principe de changement de fond par Gradient*/
+.textemulticolore {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* animation */
 /* commande pour faire clignoter du texte */
 /* animation: clignotant 4s linear infinite;
 -moz-animation: clignotant 4s linear infinite; */
@@ -66,63 +143,20 @@ section h2 {
   }
 }
 
+/* key d'apparition des éléments */
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 /* fin des animations */
-h2 {
-  text-decoration: underline;
-}
-
-section>div {
-  width: 90%;
-}
-
-p {
-  display: block;
-  box-sizing: border-box;
-  padding: 5px 5px 5px 5px;
-  border-radius: 10px/10px;
-  font-size: 18px;
-  font-family: caesar, Arial, Helvetica;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-style: normal;
-  text-align: center;
-  color: white;
-}
-
-.p_intro {
-  background-color: rgb(97, 24, 24);
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 12px;
-  margin-top: 12px;
-  text-decoration: underline;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.text_gras {
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.formatage_list {
-  text-align: left;
-  float: left;
-  direction: ltr;
-}
-
-/* principe de changement de fond par Gradient*/
-
-.textemulticolore {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 /* codé par Thomas Bouret alias satt105 */

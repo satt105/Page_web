@@ -1,25 +1,15 @@
 /* codé par Thomas Bouret alias satt105 */
 @charset "UTF-8";
 
-/*Style général applicable sur toute la page*/
-* {
-  /* font-family: caesar, Arial, Helvetica; */
-  padding: 0px;
-  margin: 0px;
-  text-decoration: none;
-  color: white;
-}
-
 html,
 body {
-  background-color: black;
+  background-color: gray;
   padding: 0px;
   margin: 0px;
 }
 
 body {
   background-image: url(image/fond_back.jpg);
-  /* background-repeat: no-repeat; */
 }
 
 /*en tête & pied de page*/
@@ -97,7 +87,6 @@ nav>ul li:hover .sous-menu {
 
 .sous-menu .menu_disposition:hover {
   border-bottom: none;
-  background-color: rgb(182, 25, 25);
 }
 
 .deroulant>.menu_disposition::after {
@@ -111,6 +100,10 @@ nav>ul li:hover .sous-menu {
   max-width: 100%;
   margin: 0 auto;
   padding: 0px;
+  border-radius: 0px;
+  animation: none;
+  -webkit-animation: none;
+  -moz-animation: none;
 }
 
 .menu_disposition::before {
@@ -122,7 +115,7 @@ nav>ul li:hover .sous-menu {
   transform: translate(-50%, -50%);
   z-index: -1;
   /* pour qu'il se mette en dessous du titre  test après */
-  transition: all 0.6s ease;
+  transition: all 0.4s ease;
   width: 100%;
   height: 0%;
 }
@@ -131,8 +124,115 @@ nav>ul li:hover .sous-menu {
   height: 100%;
 }
 
-/* bas de page */
+/* formatage des images */
+.photo_text_format {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  margin-left: 10px;
+}
 
+img {
+  border-radius: 20px/20px;
+  animation: apparition 4s linear;
+  -moz-animation: apparition 4s linear;
+  -webkit-animation: apparition 4s linear;
+}
+
+/* formatage de la vidéo d'introduction */
+.video_intro {
+  margin-top: 1%;
+  background-color: #1d0404;
+  box-shadow: 0px 0px 50px #501717;
+}
+
+.video_intro_format {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 5px 5px 5px 5px;
+}
+
+iframe {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 50px #501717;
+  border-radius: 20px/20px;
+}
+
+/* fin du formatage de la vidéo d'introduction */
+
+/* image index formatage */
+.image {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 50px #771616;
+  height: 700px;
+  width: 500px;
+}
+
+.imagebanniere {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 50px #771616;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 900px;
+  height: 480px;
+}
+
+.image_big {
+  width: 1000px;
+  height: 600px;
+  transition: 1.0s all ease-in;
+  -moz-transition: 1.0s all ease-in;
+  -webkit-transition: 1.0s all ease-in;
+}
+
+.image_big:hover {
+  -ms-transform: scale(1.3);
+  /* IE 9 */
+  -webkit-transform: scale(1.3);
+  /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.legende_index {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+figcaption {
+  font-size: small;
+  text-decoration: underline;
+  text-rendering: geometricPrecision;
+  margin-bottom: 5px;
+  animation: apparition 4s linear;
+  -moz-animation: apparition 4s linear;
+  -webkit-animation: apparition 4s linear;
+}
+
+/* fin du formatage des images de l'index */
+/* carte redimensionnement */
+.map {
+  max-width: 100%;
+  height: auto;
+  transition: 1.0s all ease-in-out;
+  padding: 10px 10px 10px 10px;
+}
+
+.map:hover {
+  -ms-transform: scale(1.3);
+  /* IE 9 */
+  -webkit-transform: scale(1.3);
+  /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+/* bas de page */
 footer {
   text-align: justify;
   box-sizing: border-box;
@@ -149,78 +249,6 @@ footer p {
   text-align: center;
 }
 
-/* formatage des image et photo */
-.photo_text_format {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 5px 5px 5px 5px;
-}
-
-.text_format {
-  margin-left: 10px;
-  overflow: hidden;
-}
-
-.video_intro {
-  margin-top: 1%;
-  background-color: #1d0404;
-  box-shadow: 0px 0px 50px #501717;
-}
-
-.videoformat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
-  margin-top: 1%;
-  /* width: 720px;
-  height: 500px; */
-}
-
-iframe {
-  box-sizing: border-box;
-  box-shadow: 0px 0px 50px #501717;
-}
-
-.image {
-  box-sizing: border-box;
-  box-shadow: 0px 0px 50px #771616;
-  height: 700px;
-  width: 500px;
-}
-
-.imagebanniere {
-  box-sizing: border-box;
-  box-shadow: 0px 0px 50px #771616;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 676px;
-  height: 380px;
-}
-
-figcaption {
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-  text-rendering: geometricPrecision;
-}
-
-/* carte redimensionnement */
-.map {
-  max-width: 100%;
-  height: auto;
-  transition: 1.0s all ease-in-out;
-  padding: 10px 10px 10px 10px;
-}
-
-.map:hover {
-  -ms-transform: scale(1.3);
-  /* IE 9 */
-  -webkit-transform: scale(1.3);
-  /* Safari 3-8 */
-  transform: scale(1.3);
-}
+/* fin du bas de page */
 
 /* codé par Thomas Bouret alias satt105 */

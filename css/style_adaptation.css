@@ -1,6 +1,7 @@
 /* codé par Thomas Bouret alias satt105 */
 @charset "UTF-8";
 /* ici sont les feuille de style auto adaptable */
+/* elle sont toutes en version BETA!!! */
 
 
 /*VERSION BUREAU adaptable (code réajustable en fonction du besoin)*/
@@ -19,6 +20,22 @@
     height: 30px;
     max-width: 100%;
   }
+
+  .map:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+
+  .image_big:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -33,4 +50,14 @@
   nav ul li {
     width: 8%;
   }
+
+  /* en cours de réécriture */
+  /* .map:hover {
+
+  }
+
+  .image_big:hover {
+  
+  } */
+  /* en cours de réécriture */
 }
