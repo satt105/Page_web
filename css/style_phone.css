@@ -1,0 +1,27 @@
+/* codé par Thomas Bouret alias satt105 */
+@charset "UTF-8";
+
+html,
+body {
+  background-color: gray;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(image/fond_back.jpg);
+}
+
+.textemulticolore {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+}
