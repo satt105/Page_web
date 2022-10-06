@@ -23,5 +23,8 @@ body {
 section {
   display: flex;
   justify-content: center;
+  flex-flow: row;
   margin: auto auto;
+  height: 1000px;
+  width: auto;
 }
