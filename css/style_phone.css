@@ -8,9 +8,6 @@ body {
   margin: 0px;
   text-align: center;
   color: white;
-}
-
-body {
   background-image: url(image/fond_back.jpg);
   background-size: cover;
 }
@@ -21,21 +18,16 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  margin: auto auto;
-  height: 100px;
-  width: 300px;
+  font-size: xx-large;
+  letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 h1 {
   display: block;
   margin: auto auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
 }
 
 p {
