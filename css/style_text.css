@@ -78,18 +78,6 @@ p {
   letter-spacing: 0px;
 }
 
-/* va faloir optimiser */
-.text_format {
-  border-left: 0 solid #00ff99;
-  transition-duration: 1s;
-}
-
-.text_format:hover {
-  border-left: 5px solid #00ff99;
-}
-
-/* va faloir fini l'optimisation */
-
 h1 {
   font-size: 36px;
   margin-bottom: 12px;
