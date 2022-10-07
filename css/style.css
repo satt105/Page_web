@@ -32,7 +32,8 @@ nav ul {
 
 nav ul li {
   float: left;
-  width: 12%;
+  margin-left: 1%;
+  margin-right: 1%;
   text-align: center;
   position: relative;
 }

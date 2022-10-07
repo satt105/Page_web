@@ -9,15 +9,11 @@
 
   /* réadaptation de l'espacement du menu */
   nav .menu_disposition {
-    font-size: large;
-  }
-
-  nav ul li {
-    width: 10%;
+    font-size: x-large;
   }
 
   .logo {
-    height: 30px;
+    height: 40px;
     max-width: 100%;
   }
 
@@ -31,33 +27,9 @@
 
   .image_big:hover {
     -ms-transform: scale(1.2);
-    /* IE 9 */
     -webkit-transform: scale(1.2);
-    /* Safari 3-8 */
     transform: scale(1.2);
   }
 }
 
-@media only screen and (max-width: 1024px) {
-
-  /* réadaptation de l'espacement du menu */
-  nav .menu_disposition {
-    font-size: normal;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  nav ul li {
-    width: 8%;
-  }
-
-  /* en cours de réécriture */
-  /* .map:hover {
-
-  }
-
-  .image_big:hover {
-  
-  } */
-  /* en cours de réécriture */
-}
+/* @media only screen and (max-width: 1024px) {} */
