@@ -138,6 +138,7 @@ img {
   animation: apparition 4s linear;
   -moz-animation: apparition 4s linear;
   -webkit-animation: apparition 4s linear;
+  text-align: center;
 }
 
 /* formatage de la vidéo d'introduction */
