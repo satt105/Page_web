@@ -2,8 +2,6 @@
 @charset "UTF-8";
 /* ici sont les feuille de style auto adaptable */
 /* elle sont toutes en version BETA!!! */
-
-
 /*VERSION BUREAU adaptable (code réajustable en fonction du besoin)*/
 @media only screen and (max-width: 1328px) {
 
@@ -31,5 +29,4 @@
     transform: scale(1.2);
   }
 }
-
 /* @media only screen and (max-width: 1024px) {} */

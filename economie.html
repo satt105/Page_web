@@ -1,124 +1,165 @@
 <!-- codé par Thomas Bouret alias satt105 -->
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <script type="text/javascript">
-      if (navigator.userAgent.match(/Android/i) ||
-          navigator.userAgent.match(/webOS/i) ||
-          navigator.userAgent.match(/iPhone/i) ||
-          navigator.userAgent.match(/iPad/i) ||
-          navigator.userAgent.match(/iPod/i) ||
-          navigator.userAgent.match(/BlackBerry/i) ||
-          navigator.userAgent.match(/Windows Phone/i)
-      ) {
-          self.location = "mobile.html";
-      }
-    </script>
-    <title>Total War: Rome 2</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description"
-          content="Page de Thomas Bouret relayant l'economie"/>
-    <meta name="keywords" content="jeux, Total wa, Rome2, economie" />
-    <meta charset="utf-8" />
-    <meta name="author" content="Bouret Thomas" />
-    <meta name=" viewport"
-          content="width=device-width, initial-scale=1, user-scalable=no "/>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style_text.css" />
-    <link rel="stylesheet" href="css/style_adaptation.css" />
-    <link rel="shortcut icon"
-          type="image/ico"
-          href="css/image/favicon/favicon.png"/>
-  </head>
-  <body>
-    <!-- barre de menu -->
-    <header role="header" class="nav">
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">
-              <img class="logo" src="css/image/Logo.png" alt="Logo introuvable" />
-            </a>
-          </li>
-          <li class="deroulant">
-            <a class="menu_disposition">Fonctionnalité</a>
-            <ul class="sous-menu">
-              <li>
-                <a class="menu_disposition" href="economie.html">Economie</a>
-              </li>
-              <li>
-                <a class="menu_disposition" href="#">Diplomatie</a>
-              </li>
-              <li>
-                <a class="menu_disposition" href="#">Technologie</a>
-              </li>
-              <li>
-                <a class="menu_disposition" href="objectif.html">Objectif</a>
-              </li>
-            </ul>
-          </li>
-          <li class="deroulant">
-            <a class="menu_disposition">Faction</a>
-            <ul class="sous-menu">
-              <li>
-                <a class="menu_disposition" href="rome.html">Rome</a>
-              </li>
-              <li>
-                <a class="menu_disposition" href="#">Sparte</a>
-              </li>
-              <li>
-                <a class="menu_disposition" href="#">Les merdes</a>
-              </li>
-              <li>
-                <a class="menu_disposition" href="#">Les autres factions</a>
-              </li>
-            </ul>
-          </li>
-          <li class="deroulant">
-            <a class="menu_disposition">Bataille</a>
-            <ul class="sous-menu">
-              <li>
-                <a class="menu_disposition" href="#">Terrestres</a>
-              </li>
-              <li>
-                <a class="menu_disposition" href="#">Navales</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="menu_disposition" href="#">Histoire</a>
-          </li>
-          <li>
-            <a class="menu_disposition" href="#">Politique</a>
-          </li>
-          <li>
-            <a class="menu_disposition" href="map.html">Map</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- fin de la barre menu -->
-    <!-- début de l'introduction -->
-    <h1>L'économie</h1>
-    <section>
-      <div class="text">
-        <p>
-          L'économie est un Facteur important. En effets sans économie, il n'y a point de guerre.
-          Comme un vieux dictons dit: <cite>Sans argent, il n'y a point de guerre !</cite>
-          L'idée principale du jeu provient de la production de richesses qu'elle vienne de l'agriculture, du
-          divertissement, des impôts, des esclaves.
-        </p>
-      </div>
-      <!-- <img class="image"
-      src="css/image/économie.jpg"
-      height="720px"
-      width="1000px"
-      alt="Image introuvable"/> -->
-    </section>
-    <footer>
-      <p>Thomas Bouret 2022</p>
-      <p>Merci de respecter le travail de l'auteur</p>
-    </footer>
-  </body>
+
+<head>
+  <script type="text/javascript" src="css/script/script.js"></script>
+  <title>Total War: Rome 2</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Page de Thomas Bouret relayant l'economie" />
+  <meta name="keywords" content="jeux, Total wa, Rome2, economie" />
+  <meta charset="utf-8" />
+  <meta name="author" content="Bouret Thomas" />
+  <meta name=" viewport" content="width=device-width, initial-scale=1, user-scalable=no " />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style_text.css" />
+  <link rel="stylesheet" href="css/style_adaptation.css" />
+  <link rel="shortcut icon" type="image/ico" href="css/image/favicon/favicon.png" />
+</head>
+
+<body>
+  <!-- barre de menu -->
+  <header role="header" class="nav">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            <img class="logo" src="css/image/Logo.png" alt="Logo introuvable" />
+          </a>
+        </li>
+        <li class="deroulant">
+          <a class="menu_disposition">Fonctionnalité</a>
+          <ul class="sous-menu">
+            <li>
+              <a class="menu_disposition" href="economie.html">Economie</a>
+            </li>
+            <li>
+              <a class="menu_disposition" href="#">Diplomatie</a>
+            </li>
+            <li>
+              <a class="menu_disposition" href="#">Technologie</a>
+            </li>
+            <li>
+              <a class="menu_disposition" href="objectif.html">Objectif</a>
+            </li>
+          </ul>
+        </li>
+        <li class="deroulant">
+          <a class="menu_disposition">Faction</a>
+          <ul class="sous-menu">
+            <li>
+              <a class="menu_disposition" href="rome.html">Rome</a>
+            </li>
+            <li>
+              <a class="menu_disposition" href="#">Sparte</a>
+            </li>
+            <li>
+              <a class="menu_disposition" href="#">Les merdes</a>
+            </li>
+            <li>
+              <a class="menu_disposition" href="#">Les autres factions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="deroulant">
+          <a class="menu_disposition">Bataille</a>
+          <ul class="sous-menu">
+            <li>
+              <a class="menu_disposition" href="#">Terrestres</a>
+            </li>
+            <li>
+              <a class="menu_disposition" href="#">Navales</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu_disposition" href="#">Histoire</a>
+        </li>
+        <li>
+          <a class="menu_disposition" href="#">Politique</a>
+        </li>
+        <li>
+          <a class="menu_disposition" href="map.html">Map</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- fin de la barre menu -->
+  <!-- début de l'introduction -->
+  <section>
+    <h2>L'économie</h2>
+    <p>
+      L'économie est un Facteur important. En effets sans économie, il n'y a point de guerre.
+      Comme un vieux dictons dit: <cite>L'argent est le ressort principal de la guerre</cite>
+      L'idée principale du jeu provient de la production de richesses qu'elle vienne de l'agriculture, du
+      divertissement, des impôts, des esclaves , des pillages, détournement de fond ect...
+    </p>
+    <figure>
+      <img class="imagebanniere, image_big" src="css/image/economie/economie1.png" alt="Image introuvable" />
+      <figcaption class="legende_index">
+        photo représentant un rapport des finances de Rome
+      </figcaption>
+      <p>Dans la configuration présenter, le niveau d'imposition (taxes) sont normal. Elle rapporte 73784 pièce d'or a
+        la nation, a celle-ci s'ajoute les revenu de la population d'esclaves soit 16101 pièces d'or.
+        Les revenu du commerces entre les faction seront expliqué dans une autre catègories plus bas <a
+          href="economie.html#commerce">(ici)</a>.
+        Les revenu autres seront abbordé plus bas <a>(ici)</a> il s'agit des revenu généralement politique ou
+        diplomatique.
+        Il y a aussi des détail a savoir, il est possible d'augmenter les impots afin d'obtenir plus d'argents mais cela
+        iras au grés du mécontentement de la population.
+        Si il y a trop de mécontentement dans les villes alors, il y auras des révoltes et l'armée devras être déployer
+        afin de calmé les emeutes.
+      </p>
+  </section>
+  <section>
+    <h2>L'entretient de l'armée</h2>
+    <p><cite>L'entretient de l'armée est capital, toutes les armées, quelle soit Navales ou Terrestres doivent recevoir
+        salaire et nouriture.</cite>
+    </p>
+    <div class="photo_text_format">
+      <p>L'entretient de l'armées est calculer en fonctions des unités qui la compose. Une armées, c'est a dire, un
+        général, des hommes, ne peut-être formées que de 20 bataillons maximum plus ou moins grand. Ainsi, chaque armées
+        devras donc être
+        payé en fonction de leur type, de leur compétence et de leur experiences car un soldat qui a déjà beaucoup
+        d'expérience sur le terrain peut-être payé presque le double du salaire habituel.
+        Il faut savoir également que si des hommes sont mort dans les rang de l'armées le salaire sera reversé quand
+        même pour 1 tour a la famille du soldat. Il faut faire attention également de ne pas engager trop d'hommes pour
+        éviter que la trésorerie plis sous le poids des
+        dépenses.
+        Il faudra donc dissocier des bataillons pour ne pas déclencher de révolution.
+        <br>
+        <!--il est pour maxime celui là -->
+        Dictons:
+        <strong><cite>De bonnes dettes deviennent mauvaises si l'on ne s'en fait pas payer.</cite></strong>
+      </p>
+      <img src="css/image/economie/formation.jpg" class="image" id="image_eco_format" alt="image indisponible" />
+    </div>
+    <h3>Tableau de paye de quelques unités Terrestres</h3>
+    <table>
+      <tbody>
+        <tr>
+          <th>Nom des unités</th>
+          <th>Salaire</th>
+        </tr>
+        <tr>
+          <td>Garde Prétorien</td>
+          <td>1200</td>
+        </tr>
+        <tr>
+          <td>Triarri</td>
+          <td>680</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="commerce">
+    <h2>Le commerce</h2>
+  </section>
+  <footer>
+    <p>Thomas Bouret 2022</p>
+    <p>Merci de respecter le travail de l'auteur</p>
+  </footer>
+</body>
+
 </html>
 <!-- codé par Thomas Bouret alias satt105 -->

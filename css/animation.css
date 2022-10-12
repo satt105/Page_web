@@ -1,0 +1,20 @@
+/* À retravailler ultérieurement */
+.deroulant {
+    animation: scroll 90s linear infinite;
+    background: url("image/fond_back.jpg"), #ff0000;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+
+}
+
+@keyframes scroll {
+    /* Peut entraîner des problèmes du a la mauvaise compatibilité */
+    0% {
+        
+        background-position: 0px 2000px;
+    }
+
+    100% {
+        background-position: 0px -2000px;
+    }
+}

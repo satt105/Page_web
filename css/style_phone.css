@@ -10,6 +10,7 @@ body {
   color: white;
   background-image: url(image/fond_back.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .textemulticolore {
