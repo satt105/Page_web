@@ -13,6 +13,12 @@ body {
   background-repeat: no-repeat;
 }
 
+section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .textemulticolore {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   -webkit-background-clip: text;
@@ -24,8 +30,14 @@ body {
   text-decoration: underline;
 }
 
+.image {
+  width: 400px;
+  height: 420px;
+  margin: auto auto;
+  overflow: hidden;
+}
+
 h1 {
-  display: block;
   margin: auto auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 5px;

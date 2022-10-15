@@ -39,8 +39,8 @@ if (navigator.userAgent.match(/Android/i) ||
 }
 
 window.setInterval(() => {
-    // uniquement a des fin de test
     var page = self.location.pathname.replace(/^.*[\\\/]/, '')
+    // uniquement a des fin de test
     // console.log(page)
     if (page != "invalid.html") {
         if (window.outerWidth <= 1000) {
