@@ -1,6 +1,6 @@
 // codé en UTF-8
 // codé par Ethan Sanjuan alias PalmierPale et Thomas Bouret alias satt105
-// le12/10/2022 à 10:58 heures de Paris
+// le 12/10/2022 à 10:58 heures de Paris
 
 // fonction récupéré de https://www.w3schools.com/js/js_cookies.asp pour la création de cookie
 function setCookie(cname, cvalue, exdays) {

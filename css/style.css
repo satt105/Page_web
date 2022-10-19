@@ -49,7 +49,7 @@ nav .menu_disposition {
   text-decoration: none;
   color: rgb(255, 255, 255);
   border-bottom: 2px solid transparent;
-  padding: 10px 0px;
+  padding: 10px 10px 10px 10px;
   text-align: center;
   font-size: x-large;
   opacity: 1;
@@ -104,6 +104,7 @@ nav>ul li:hover .sous-menu {
   animation: none;
   -webkit-animation: none;
   -moz-animation: none;
+  -o-animation: none;
 }
 
 .menu_disposition::before {
@@ -113,9 +114,15 @@ nav>ul li:hover .sous-menu {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   z-index: -1;
   /* pour qu'il se mette en dessous du titre  test après */
   transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   width: 100%;
   height: 0%;
 }
@@ -129,6 +136,8 @@ nav>ul li:hover .sous-menu {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 5px 5px 5px 5px;
   margin-left: 10px;
 }
@@ -138,6 +147,7 @@ img {
   animation: apparition 4s linear;
   -moz-animation: apparition 4s linear;
   -webkit-animation: apparition 4s linear;
+  -o-animation: apparition 4s linear;
   text-align: center;
 }
 
@@ -159,6 +169,23 @@ th {
 }
 
 /* formatage de la vidéo d'introduction */
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#video_body {
+  background-color: transparent;
+  background-image: none;
+}
+
 .video_intro {
   margin-top: 1%;
   background-color: #1d0404;
@@ -178,6 +205,8 @@ th {
 
 iframe {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-shadow: 0px 0px 50px #501717;
   border-radius: 20px/20px;
 }
@@ -187,6 +216,8 @@ iframe {
 /* image formatage */
 .image {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-shadow: 0px 0px 50px #771616;
   height: 700px;
   width: 500px;
@@ -194,6 +225,8 @@ iframe {
 
 .imagebanniere {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-shadow: 0px 0px 50px #771616;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -207,19 +240,20 @@ iframe {
   transition: 1.0s all ease-in;
   -moz-transition: 1.0s all ease-in;
   -webkit-transition: 1.0s all ease-in;
+  -o-transition: 1.0s all ease-in;
 }
 
 .image_big:hover {
   -ms-transform: scale(1.3);
-  /* IE 9 */
   -webkit-transform: scale(1.3);
-  /* Safari 3-8 */
+  -o-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-#image_eco_format{
+#image_eco_format {
   height: 460px;
 }
+
 .legende_index {
   text-align: center;
   font-weight: bold;
@@ -231,8 +265,10 @@ figcaption {
   text-decoration: underline;
   margin-bottom: 5px;
   animation: apparition 4s linear;
+  text-align: center;
   -moz-animation: apparition 4s linear;
   -webkit-animation: apparition 4s linear;
+  -o-animation: apparition 4s linear;
 }
 
 /* fin du formatage des images de l'index */
@@ -241,14 +277,16 @@ figcaption {
   max-width: 100%;
   height: auto;
   transition: 1.0s all ease-in-out;
+  -moz-transition: 1.0s all ease-in-out;
+  -webkit-transition: 1.0s all ease-in-out;
+  -o-transition: 1.0s all ease-in-out;
   padding: 10px 10px 10px 10px;
 }
 
 .map:hover {
   -ms-transform: scale(1.3);
-  /* IE 9 */
   -webkit-transform: scale(1.3);
-  /* Safari 3-8 */
+  -o-transform: scale(1.3);
   transform: scale(1.3);
 }
 
